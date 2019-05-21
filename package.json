@@ -1,0 +1,40 @@
+{
+  "name": "blog-node-express",
+  "version": "1.0.0",
+  "bin": {
+    "www": "./bin/www"
+  },
+  "description": "blog-node-express",
+  "main": "app.js",
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "consola": "^2.6.2",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "http-errors": "^1.7.2",
+    "mongodb": "^3.2.4",
+    "mongoose": "^5.5.8",
+    "mongoose-auto-increment": "^5.0.1",
+    "shelljs": "^0.8.3",
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "pm2:dev": "pm2 start pm2.json --env dev",
+    "pm2:pro": "pm2 start pm2.json --env env",
+    "pm2:test": "pm2 start pm2.json --env test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonliao001/blog-node-express.git"
+  },
+  "author": "v_bxliao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonliao001/blog-node-express/issues"
+  },
+  "homepage": "https://github.com/jasonliao001/blog-node-express#readme"
+}

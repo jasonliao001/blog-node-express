@@ -1,0 +1,34 @@
+{
+  "apps": [
+    {
+      "name": "blog-node-express",
+      "script": "bin/www",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "instances": 1,
+      "min_uptime": "200s",
+      "max_restarts": 10,
+      "max_memory_restart": "1M",
+      "cron_restart": "1 0 * * *",
+      "watch": false,
+      "exec_interpreter": "node",
+      "exec_mode": "fork",
+      "autorestart": false,
+      "vizion": false,
+      "env": {
+        "NODE_ENV": "production",
+        "DB_USER": "root",
+        "DB_PASS": ""
+      },
+      "env_dev": {
+        "NODE_ENV": "development",
+        "DB_USER": "root",
+        "DB_PASS": ""
+      },
+      "env_test": {
+        "NODE_ENV": "test",
+        "DB_USER": "root",
+        "DB_PASS": ""
+      }
+    }
+  ]
+}
