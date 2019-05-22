@@ -29,7 +29,8 @@
 - mongoose
 - mongoose-auto-increment
 - pm2
-- 待添加
+- express-jwt
+- jsonwebtoken
 
 ## 已实现
 
@@ -37,9 +38,15 @@
 
 - 多环境配置
 
+- 用户登陆与注册
+
+- jwt 身份验证
+
 ## 待实现
 
-- 用户登陆与注册
+- 文件上传
+
+- 数据加密
 
 - 测试
 
@@ -58,3 +65,13 @@ npm run pm2:pro
 # test environment
 npm run pm2:test
 ```
+
+## FAQ
+
+#### jwt 登陆逻辑
+
+1. 用户使用用户名密码、或第三方授权登录后，请求应用服务器；
+2. 服务器验证用户信息是否合法；
+3. 对通过验证的用户，签发一个包涵用户 ID、其他少量用户信息（比如用户角色）以及失效时间的 JWT token；
+4. 客户端存储 JWT token，并在调用需要身份验证的接口服务时，带上这个 JWT token 值；
+5. 服务器验证 JWT token 的签发合法性，时效性，验证通过后，返回业务数据。
