@@ -2,6 +2,7 @@ import User from '../models/user';
 const JWT = require('jsonwebtoken');
 const { validationResult, check, oneOf } = require('express-validator/check');
 module.exports = [
+  // 注册用户
   {
     method: 'POST',
     path: '/register',
@@ -70,6 +71,7 @@ module.exports = [
       validate: []
     }
   },
+  // 获取用户信息
   {
     method: 'GET',
     path: '/getUserInfo',
@@ -99,6 +101,7 @@ module.exports = [
       validate: []
     }
   },
+  // 登陆
   {
     method: 'POST',
     path: '/login',
