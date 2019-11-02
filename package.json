@@ -16,7 +16,7 @@
     "http-errors": "^1.7.2",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.2.4",
-    "mongoose": "^5.5.8",
+    "mongoose": "^5.7.5",
     "mongoose-auto-increment": "^5.0.1",
     "shelljs": "^0.8.3",
     "yargs": "^13.2.4"
