@@ -18,7 +18,7 @@
     "mongodb": "^3.2.4",
     "mongoose": "^5.5.8",
     "mongoose-auto-increment": "^5.0.1",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "yargs": "^13.2.4"
   },
   "devDependencies": {
